@@ -1,0 +1,47 @@
+﻿@model MVCJuegos.Models.Juegos
+
+@{
+    ViewData["Title"] = "Colabora con Nosotros";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>Descargar Juego</h3>
+        </div>
+    </div>
+    
+            <div class="row">
+                <div class="col-sm-10">
+                    <form method="post" asp-action="Edit">
+                        <input type="hidden" asp-for="Id"/>
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                         <div class="form-group">
+                            <img asp-for="Imagen" class="control-label"></img>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Nombre" class="control-label"> @(Model.Nombre)</label>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Descripcion" class="control-label">@(Model.Descripcion)</label>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Consola" class="control-label">@(Model.Consola)</label>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Genero" class="control-label">@(Model.Genero)</label>
+                        </div>
+                       
+                        <div class="form-group">
+                            <label asp-for="Enlace" class="control-label">Descargar: <a href="@(Model.Enlace)"></a></label>
+                        </div>
+                        <div class="form-group">
+                            <a asp-controller="Juegos" asp-action="Index" class="btn btn-danger">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+</div>
