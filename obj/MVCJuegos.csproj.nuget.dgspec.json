@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repo prog V\\MVCJuegos\\MVCJuegos\\MVCJuegos.csproj": {}
+    "C:\\Users\\Boreal\\Source\\Repos\\MvcJuegos\\MVCJuegos.csproj": {}
   },
   "projects": {
-    "D:\\repo prog V\\MVCJuegos\\MVCJuegos\\MVCJuegos.csproj": {
+    "C:\\Users\\Boreal\\Source\\Repos\\MvcJuegos\\MVCJuegos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repo prog V\\MVCJuegos\\MVCJuegos\\MVCJuegos.csproj",
+        "projectUniqueName": "C:\\Users\\Boreal\\Source\\Repos\\MvcJuegos\\MVCJuegos.csproj",
         "projectName": "MVCJuegos",
-        "projectPath": "D:\\repo prog V\\MVCJuegos\\MVCJuegos\\MVCJuegos.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\repo prog V\\MVCJuegos\\MVCJuegos\\obj\\",
+        "projectPath": "C:\\Users\\Boreal\\Source\\Repos\\MvcJuegos\\MVCJuegos.csproj",
+        "packagesPath": "C:\\Users\\Boreal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Boreal\\Source\\Repos\\MvcJuegos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Boreal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

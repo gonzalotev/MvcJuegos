@@ -18,31 +18,32 @@
 
     <div class="row">
         <div class="col-sm-8" style="text-align:center">
-            <h1>Lista de Juegos</h1>
+            <h1 style="font-size: 50px; font-family: Arial; margin-left: 25%; width: 650px; margin-bottom: 10% ">Lista de Juegos</h1>
         </div>
     </div>
 
     <div class="row"  >
         @if (Model.Count() > 0) {
                 @foreach (var item in Model) {
-                        <div class="card" >
+                        <div class="card" style="margin-right:5%; margin-bottom: 2%" >
                                   @if (item.Imagen != null) 
                                 {                               
-                                     <img src="@item.Imagen" alt="Juego" class="card-img-top"/>
+                                     <img src="@item.Imagen" alt="Juego" class="card-img-top" style="max-width: 260px; min-width: 260px; min-height: 300px;max-height: 300px;align-content:center;border: 2px solid black "/>
 
                                 }
                                 else 
                                 {
                                   <img src="./css/" alt="Juego" class="card-img-top" />
                                 }
-                                <div class="card-body">
-                                    <p class="card-title"> @Html.DisplayFor(modelItem => item.Nombre)</p>
+                                <div class="card-body" style="max-width: 260px; min-width: 260px; min-height: 300px; max-height: 300px; align-content: center; background-color: #D3FBFA">
+                                    <p class="card-title" style="font-weight:bold; font-size: 20px"> @Html.DisplayFor(modelItem => item.Nombre)</p>
                                     <p class="card-text">Info: @Html.DisplayFor(modelItem => item.Descripcion)</p>
                                     <p class="card-text">Consola: @Html.DisplayFor(modelItem => item.Consola)</p>
                                     <p class="card-text">Genero: @Html.DisplayFor(modelItem => item.Genero)</p>
                                     <div>
                                         <a asp-controller="Juegos" asp-action="Info" asp-route-id="@item.Id" class="btn btn-warning">Descargar</a>
                                         <a asp-controller="Juegos" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Editar</a>
+                                        <a asp-controller="Juegos" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger" style="margin-top: 2%; margin-left: 20%">Eliminar</a>
                                     </div>
                                 </div>
                         </div>

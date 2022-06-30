@@ -39,7 +39,7 @@ namespace MVCJuegos.Controllers
                 _context.Juegos.Add(juegos);
                 _context.SaveChanges();
 
-                TempData["mensaje"] = "Gracias por colaborar!";
+                TempData["mensaje"] = "¡Gracias por colaborar!";
                 return RedirectToAction("Index");
             }
 

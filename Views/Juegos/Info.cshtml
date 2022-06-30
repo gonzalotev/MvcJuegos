@@ -18,24 +18,25 @@
                     <form method="post" asp-action="Edit">
                         <input type="hidden" asp-for="Id"/>
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                         <div class="form-group">
-                            <img asp-for="Imagen" class="control-label"></img>
+                        <div class="form-group">
+                            <img asp-for="Imagen"src="@(Model.Imagen)" class="control-label" />
+                            <img src="@(Model.Imagen)" alt="Juego" class="card-img-top" style="max-width: 260px; min-width: 260px; min-height: 300px;max-height: 300px;align-content:center;border: 2px solid black " />
                         </div>
                         <div class="form-group">
-                            <label asp-for="Nombre" class="control-label"> @(Model.Nombre)</label>
+                            <label asp-for="Nombre" class="control-label"> Nombre: @(Model.Nombre)</label>
                         </div>
                         <div class="form-group">
-                            <label asp-for="Descripcion" class="control-label">@(Model.Descripcion)</label>
+                            <label asp-for="Descripcion" class="control-label">Info: @(Model.Descripcion)</label>
                         </div>
                         <div class="form-group">
-                            <label asp-for="Consola" class="control-label">@(Model.Consola)</label>
+                            <label asp-for="Consola" class="control-label">Consola: @(Model.Consola)</label>
                         </div>
                         <div class="form-group">
-                            <label asp-for="Genero" class="control-label">@(Model.Genero)</label>
+                            <label asp-for="Genero" class="control-label">Género: @(Model.Genero)</label>
                         </div>
                        
                         <div class="form-group">
-                            <label asp-for="Enlace" class="control-label">Descargar: <a href="@(Model.Enlace)"></a></label>
+                            <label asp-for="Enlace" class="control-label">Descargar: @(Model.Enlace)</label>
                         </div>
                         <div class="form-group">
                             <a asp-controller="Juegos" asp-action="Index" class="btn btn-danger">Cancelar</a>
